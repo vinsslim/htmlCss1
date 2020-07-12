@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+
+  <script>
+    function validateForm(){
+
+      var username = document.forms["loginForm"]["username"].value;
+      var password = document.forms["loginForm"]["password"].value;
+      if ( username == "indra" && password == "indra123"){
+        alert("Login successfully");
+      }
+      else{
+        alert("Username or Password not valid!");
+        return false;
+      }
+
+    }
+  </script>
+
+</head>
+
+<body>
+  <div class="top-wrapper" id="home">
+    <div class="container">
+      <img src="img/logo2.png" alt="">
+      <p>Hubungi Kami</p>
+      <div class="btn-wrapper">
+        <a href="#"><img src="img/fb.png" alt=""></a>
+        <a href="#"><img src="img/twitter.png" alt=""></a>
+        <a href="#"><img src="img/ig.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <div class="header-left">
+        <a href="index.html"><img class="logo" src="img/logo2.png"></a>
+      </div>
+      <div class="header-right">
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="rating.html">Rating</a>
+        <a href="forum.html">Forum</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="login">
+      <form name="loginForm" action="index.html" onsubmit="return validateForm()" method="post">
+        <h1>Login</h1>
+        <div class="loginEmail">
+          <strong>Username</strong>
+          <input type="text" name="username" placeholder="Username" id="username">
+        </div>
+        <br>
+        <div class="loginPassword">
+          <strong>Password</strong>
+          <input type="password" name="password" placeholder="Password" id="password">
+        </div>
+        <br>
+        <button class="btn-m message" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="find-wrapper">
+    <div class="container">
+      <div class="contact">
+        <h1>Hubungi Kami</h1>
+        <p>Tersedia layanan pesan antar</p>
+        <p>klik tombol di bawah ini untuk memesan</p>
+        <span class="btn-m message">Pesan Sekarang</span>
+      </div>
+      <div class="find">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416.98999377080764!2d106.78252793500427!3d-6.117274370460867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x99580972ee394b76!2sRumah%20Makan%20Karya%20Minang!5e0!3m2!1sen!2sid!4v1594108737247!5m2!1sen!2sid"
+          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="containter">
+      <p>© 2019 MINANG RAYA</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
